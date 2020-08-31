@@ -4,16 +4,17 @@ def reload
   load 'config/environment.rb'
 end
 
+# Model Domain
 #VentureCapitalist<->FundingRound<->Startup
 
-#Base Variables
+# Base Variables
 s = Startup.new("The Younis", "Walid Younis", "Tech")
 v = VentureCapitalist.new("B.Warren", 2000000)
 
-#Association Variable
+# Association Variable
 f = FundingRound.new(s, v, "Series A", 250000.5)
 
-#Additional Varibles
+# Additional Varibles
 s2 = Startup.new("Warren, Inc", "Bree Warren", "Tech")
 v2 = VentureCapitalist.new("W. Younis", 50)
 f2 = FundingRound.new(s, v, "Series B", 500000.5)
